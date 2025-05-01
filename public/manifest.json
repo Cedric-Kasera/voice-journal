@@ -1,0 +1,42 @@
+{
+  "name": "Voice Journal",
+  "short_name": "VJ",
+  "description": "Record and transcribe your daily thoughts",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eff5ff",
+  "theme_color": "#2257ee",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "id": "voice-journal-app",
+  "scope": "/"
+}

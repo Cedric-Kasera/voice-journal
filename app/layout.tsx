@@ -4,8 +4,6 @@ import { Toaster } from "@/components/ui/toaster"
 import "./globals.css"
 import type { Metadata, Viewport } from "next"
 import { Comfortaa } from "next/font/google"
-// Add the InstallLayout import
-import InstallLayout from "./install-layout"
 
 const comfortaa = Comfortaa({
   subsets: ["latin"],
@@ -49,7 +47,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  // Modify the return statement to include InstallLayout
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -59,7 +57,7 @@ export default function RootLayout({
       </head>
       <body className={`${comfortaa.variable} font-sans bg-hawkes-blue-50 dark:bg-gray-950`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <InstallLayout>{children}</InstallLayout>
+          {children}
           <Toaster />
         </ThemeProvider>
       </body>
